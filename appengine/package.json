@@ -1,0 +1,24 @@
+{
+    "name": "appengine-cron-firebase",
+    "description": "Jobs Node.js for Google App Engine Flexible Environment.",
+    "version": "0.0.1",
+    "private": true,
+    "license": "GNU GENERAL PUBLIC LICENSE",
+    "author": "Jhonny Ramirez Zeballos",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jrcinco/firebase-jobs"
+    },
+    "engines": {
+      "node": ">=4.3.2"
+    },
+    "scripts": {
+      "deploy": "gcloud app deploy app.yaml && gcloud app deploy cron.yaml",
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "@google-cloud/pubsub": "0.13.2",
+      "express": "4.15.4"
+    }
+}
+  

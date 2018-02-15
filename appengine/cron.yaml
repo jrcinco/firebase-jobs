@@ -1,0 +1,4 @@
+cron:
+- description: Push a "tick" onto pubsub scheduled reservation
+  url: /publish/scheduled-tick
+  schedule: every 5 mins

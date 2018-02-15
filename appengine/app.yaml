@@ -1,0 +1,13 @@
+# [START app_yaml]
+runtime: nodejs
+env: flex
+
+handlers:
+# Handler for the pubsub cron.
+- url: /publish/.*
+  script: app.js
+  secure: always
+# By default.
+- url: /.*
+  script: app.js
+# [END app_yaml]
